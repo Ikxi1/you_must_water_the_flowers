@@ -1,37 +1,29 @@
-# Generated from CLion C/C++ Code Style settings
----
-Language: Cpp
 BasedOnStyle: LLVM
-AccessModifierOffset: -6
-AlignConsecutiveAssignments: false
-AlignConsecutiveDeclarations: false
-AlignOperands: true
-AlignTrailingComments: false
+AccessModifierOffset: -4
+AlignConsecutiveAssignments:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: true
+  AlignCompound: true
+  PadOperators: true
+AlignConsecutiveDeclarations:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: true
+  AlignCompound: true
+  PadOperators: true
+AlignTrailingComments:
+  Kind: Always
+  OverEmptyLines: 2
+AllowShortBlocksOnASingleLine: Always
+AllowShortCaseExpressionOnASingleLine: true
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortIfStatementsOnASingleLine: AllIfsAndElse
 AlwaysBreakTemplateDeclarations: Yes
-BraceWrapping: 
-  AfterCaseLabel: false
-  AfterClass: false
-  AfterControlStatement: false
-  AfterEnum: false
-  AfterFunction: false
-  AfterNamespace: false
-  AfterStruct: false
-  AfterUnion: false
-  AfterExternBlock: false
-  BeforeCatch: false
-  BeforeElse: false
-  BeforeLambdaBody: false
-  BeforeWhile: false
-  SplitEmptyFunction: true
-  SplitEmptyRecord: true
-  SplitEmptyNamespace: true
-BreakBeforeBraces: Custom
+BreakBeforeBraces: Allman
 BreakConstructorInitializers: AfterColon
-BreakConstructorInitializersBeforeComma: false
-ColumnLimit: 120
 ConstructorInitializerAllOnOneLineOrOnePerLine: false
-ContinuationIndentWidth: 12
-IncludeCategories: 
+IncludeCategories:
   - Regex: '^<.*'
     Priority: 1
   - Regex: '^".*'
@@ -39,20 +31,18 @@ IncludeCategories:
   - Regex: '.*'
     Priority: 3
 IncludeIsMainRegex: '([-_](test|unittest))?$'
-IndentCaseLabels: true
-IndentWidth: 6
+IndentCaseBlocks: false
 InsertNewlineAtEOF: true
 MacroBlockBegin: ''
 MacroBlockEnd: ''
 MaxEmptyLinesToKeep: 2
 NamespaceIndentation: All
-SpaceAfterCStyleCast: true
-SpaceAfterTemplateKeyword: false
-SpaceBeforeRangeBasedForLoopColon: false
+PointerAlignment: Right
 SpaceInEmptyParentheses: false
-SpacesInAngles: false
-SpacesInConditionalStatement: false
-SpacesInCStyleCastParentheses: false
-SpacesInParentheses: false
+IndentCaseLabels: true
+IndentWidth: 6
+ContinuationIndentWidth: 6
 TabWidth: 6
-...
+UseTab: Never
+ColumnLimit: 120
+AllowShortFunctionsOnASingleLine: All
